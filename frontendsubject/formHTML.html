@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Form HTML</title>
+    <style>
+        .text
+        {
+            font-weight: bold;
+        }
+        .text_wrapper
+        {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        form :nth-child(2) li
+        {
+            margin-bottom: 5px;
+        }
+        textarea
+        {
+            width: 500px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+  <div>
+      <h1>프로트엔드 개발자 지원서</h1>
+      <div class="text_wrapper"><span class="text">HTML, CSS, JAVASCRIPT</span>에 대한 기술적 이해와 많은 경험이 있는분을 찾습니다.</div>
+      <fieldset>
+          <legend>입사지원서</legend>
+          <form>
+              <h3>개인정보</h3>
+              <ul>
+                  <li>
+                      이름
+                      <input type="text">
+                  </li>
+                  <li>
+                      연락처
+                      <input type="text">
+                  </li>
+                  <li>
+                      학과
+                      <select name="major">
+                          <option value="">학과선택</option>
+                          <option value="computer_engineering">컴퓨터 공학과</option>
+                      </select>
+                  </li>
+              </ul>
+              <h3>지원 분야</h3>
+              <ul>
+                  <li>
+                      <label>
+                        <input type='radio' name="apply">
+                        웹 퍼블리싱
+                      </label>
+                  </li>
+                  <li>
+                      <label>
+                        <input type='radio' name="apply">
+                        웹 어플리케이션
+                      </label>
+                  </li>
+                  <li>
+                      <label>
+                          <input type='radio' name="apply">
+                          웹 개발 지원
+                      </label>
+                  </li>
+              </ul>
+              <div>
+                  <h3>지원 동기</h3>
+                  <textarea placeholder="지원동기를 작성해주세요"></textarea>
+              </div>
+              <div>
+                  <button type="submit">
+                      접수하기
+                  </button>
+                  <button type="reset">
+                      다시작성
+                  </button>
+              </div>
+          </form>
+      </fieldset>
+  </div>
+</body>
+</html>
